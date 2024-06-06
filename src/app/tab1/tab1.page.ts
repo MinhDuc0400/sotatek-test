@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MapService } from '../services/map.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-tab1',
@@ -9,16 +10,13 @@ import { MapService } from '../services/map.service';
 export class Tab1Page {
 
     constructor(
-        private mapService: MapService
+        private router: Router
     ) {
     }
 
-    ionViewWillEnter() {
-        this.mapService.getMaps().subscribe(
-            res => {
-                console.log(res)
-            }
-        )
+
+    viewMap() {
+        this.router.navigateByUrl('map')
     }
 
 }

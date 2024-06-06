@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>map</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content
+>
+    <img
+        #background
+        class="background"
+        [src]="scenes[currentPosition]?.background_url"
+        [alt]="'background_url'"
+    />
+    <ion-icon class="arrow-forward" name="arrow-forward" size="large" (click)="rotateRight()"></ion-icon>
+    <ion-icon class="arrow-back" name="arrow-back" size="large" (click)="rotateLeft()"></ion-icon>
+</ion-content>

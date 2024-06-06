@@ -1,0 +1,23 @@
+ion-content {
+  position: relative;
+}
+
+.arrow-back {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.arrow-forward {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  max-width: unset;
+}

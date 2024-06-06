@@ -2,7 +2,7 @@
   "scenes": [
     {
       "id": 0,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_152648.jpg",
       "destinations": [
         {
           "x": 12,
@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_152507.jpg",
       "destinations": [
         {
           "x": 12,
@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_152112.jpg",
       "destinations": [
         {
           "x": 12,
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_151819.jpg",
       "destinations": [
         {
           "x": 12,
@@ -46,7 +46,7 @@
     },
     {
       "id": 4,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_151448.jpg",
       "destinations": [
         {
           "x": 12,
@@ -57,7 +57,7 @@
     },
     {
       "id": 5,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_151217.jpg",
       "destinations": [
         {
           "x": 12,
@@ -68,7 +68,7 @@
     },
     {
       "id": 6,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_150944.jpg",
       "destinations": [
         {
           "x": 12,
@@ -79,7 +79,7 @@
     },
     {
       "id": 7,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_150435.jpg",
       "destinations": [
         {
           "x": 12,
@@ -90,7 +90,7 @@
     },
     {
       "id": 8,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_150217.jpg",
       "destinations": [
         {
           "x": 12,
@@ -101,7 +101,7 @@
     },
     {
       "id": 9,
-      "background_url": "asd",
+      "background_url": "assets/photos/20201102_145719.jpg",
       "destinations": [
         {
           "x": 12,
