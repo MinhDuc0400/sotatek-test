@@ -3,12 +3,25 @@ ion-content {
 }
 
 .arrow-back {
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 10px;
 }
 
+.layer-button {
+  position: relative;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+ion-button {
+  z-index: 1000;
+  position: absolute;
+}
+
 .arrow-forward {
+  z-index: 2;
   position: absolute;
   top: 50%;
   right: 10px;

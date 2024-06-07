@@ -5,9 +5,9 @@
       "background_url": "assets/photos/20201102_152648.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 21,
+          "y": 40,
+          "target": 1
         }
       ]
     },

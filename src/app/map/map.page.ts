@@ -9,6 +9,7 @@ import { Scene } from './interfaces';
 })
 export class MapPage implements OnInit {
   @ViewChild('background') background: ElementRef
+  @ViewChild('layer') layer: ElementRef
   scenes: Scene[] = []
   currentPosition = 0;
   currentImagePositionLeft = 50;
@@ -36,11 +37,17 @@ export class MapPage implements OnInit {
 
   ngAfterViewInit() {
     this.background.nativeElement.style.top = '50%';
+    this.layer.nativeElement.style.top = '50%';
     this.resetCurrentImagePosition();
   }
 
   setLeftPosition() {
     this.background.nativeElement.style.left = this.currentImagePositionLeft + '%';
+    this.layer.nativeElement.style.left = this.currentImagePositionLeft + '%';
+    console.log(this.background.nativeElement.getBoundingClientRect())
+    this.layer.nativeElement.style.width = this.background.nativeElement.getBoundingClientRect().width + 'px';
+    this.layer.nativeElement.style.height = this.background.nativeElement.getBoundingClientRect().height + 'px';
+    console.log(this.layer.nativeElement.getBoundingClientRect())
   }
 
   rotateLeft() {

@@ -6,6 +6,16 @@
 
 <ion-content
 >
+    <div #layer class="layer-button">
+        <ion-button
+                *ngFor="let button of scenes[currentPosition]?.destinations"
+                [ngStyle]="{'top': button.y + '%', 'left': button.x + '%'}"
+
+        >
+
+            CLICK
+        </ion-button>
+    </div>
     <img
         #background
         class="background"
