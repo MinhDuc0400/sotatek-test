@@ -16,8 +16,13 @@
       "background_url": "assets/photos/20201102_152507.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
+          "x": 26,
+          "y": 42,
+          "target": 2
+        },
+        {
+          "x": 66,
+          "y": 90,
           "target": 0
         }
       ]
@@ -29,7 +34,12 @@
         {
           "x": 12,
           "y": 32,
-          "target": 0
+          "target": 3
+        },
+        {
+          "x": 74,
+          "y": 64,
+          "target": 2
         }
       ]
     },
@@ -38,9 +48,14 @@
       "background_url": "assets/photos/20201102_151819.jpg",
       "destinations": [
         {
-          "x": 12,
+          "x": 25,
           "y": 32,
-          "target": 0
+          "target": 4
+        },
+        {
+          "x": 71,
+          "y": 50,
+          "target": 3
         }
       ]
     },
@@ -49,9 +64,14 @@
       "background_url": "assets/photos/20201102_151448.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 17,
+          "y": 31,
+          "target": 5
+        },
+        {
+          "x": 71,
+          "y": 50,
+          "target": 3
         }
       ]
     },
@@ -60,9 +80,19 @@
       "background_url": "assets/photos/20201102_151217.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 13,
+          "y": 51,
+          "target": 6
+        },
+        {
+          "x": 49,
+          "y": 57,
+          "target": 6
+        },
+        {
+          "x": 80,
+          "y": 40,
+          "target": 6
         }
       ]
     },
@@ -71,9 +101,14 @@
       "background_url": "assets/photos/20201102_150944.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 18,
+          "y": 43,
+          "target": 7
+        },
+        {
+          "x": 81,
+          "y": 61,
+          "target": 5
         }
       ]
     },
@@ -82,9 +117,19 @@
       "background_url": "assets/photos/20201102_150435.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 27,
+          "y": 63,
+          "target": 8
+        },
+        {
+          "x": 64,
+          "y": 50,
+          "target": 8
+        },
+        {
+          "x": 80,
+          "y": 63,
+          "target": 8
         }
       ]
     },
@@ -93,9 +138,14 @@
       "background_url": "assets/photos/20201102_150217.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
-          "target": 0
+          "x": 8,
+          "y": 60,
+          "target": 9
+        },
+        {
+          "x": 43,
+          "y": 70,
+          "target": 9
         }
       ]
     },
@@ -104,9 +154,14 @@
       "background_url": "assets/photos/20201102_145719.jpg",
       "destinations": [
         {
-          "x": 12,
-          "y": 32,
+          "x": 31,
+          "y": 45,
           "target": 0
+        },
+        {
+          "x": 50,
+          "y": 45,
+          "target": 8
         }
       ]
     }

@@ -44,10 +44,8 @@ export class MapPage implements OnInit {
   setLeftPosition() {
     this.background.nativeElement.style.left = this.currentImagePositionLeft + '%';
     this.layer.nativeElement.style.left = this.currentImagePositionLeft + '%';
-    console.log(this.background.nativeElement.getBoundingClientRect())
     this.layer.nativeElement.style.width = this.background.nativeElement.getBoundingClientRect().width + 'px';
     this.layer.nativeElement.style.height = this.background.nativeElement.getBoundingClientRect().height + 'px';
-    console.log(this.layer.nativeElement.getBoundingClientRect())
   }
 
   rotateLeft() {
@@ -57,8 +55,14 @@ export class MapPage implements OnInit {
   }
 
   rotateRight() {
-    if (Math.abs(this.background.nativeElement.getBoundingClientRect().x) > (this.background.nativeElement.getBoundingClientRect().width)) return;
+    if (this.background.nativeElement.getBoundingClientRect().right - window.innerWidth <= 0) return;
     this.currentImagePositionLeft -= 25;
     this.setLeftPosition();
+  }
+
+  goTo(target: number) {
+    if (Number.isNaN(target)) return;
+    this.currentPosition = target;
+    this.resetCurrentImagePosition();
   }
 }

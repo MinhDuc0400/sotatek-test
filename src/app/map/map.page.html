@@ -10,7 +10,7 @@
         <ion-button
                 *ngFor="let button of scenes[currentPosition]?.destinations"
                 [ngStyle]="{'top': button.y + '%', 'left': button.x + '%'}"
-
+                (click)="goTo(button.target)"
         >
 
             CLICK
