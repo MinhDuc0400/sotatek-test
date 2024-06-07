@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MapService } from '../services/map.service';
 import { Scene } from './interfaces';
 
@@ -7,19 +7,16 @@ import { Scene } from './interfaces';
   templateUrl: './map.page.html',
   styleUrls: ['./map.page.scss'],
 })
-export class MapPage implements OnInit {
-  @ViewChild('background') background: ElementRef
-  @ViewChild('layer') layer: ElementRef
-  scenes: Scene[] = []
+export class MapPage {
+  @ViewChild('background') background: ElementRef;
+  @ViewChild('layer') layer: ElementRef;
+  scenes: Scene[] = [];
   currentPosition = 0;
   currentImagePositionLeft = 50;
 
   constructor(
     private mapService: MapService
   ) {
-  }
-
-  ngOnInit() {
   }
 
   ionViewWillEnter() {
@@ -33,12 +30,6 @@ export class MapPage implements OnInit {
   resetCurrentImagePosition() {
     this.currentImagePositionLeft = 50;
     this.setLeftPosition();
-  }
-
-  ngAfterViewInit() {
-    this.background.nativeElement.style.top = '50%';
-    this.layer.nativeElement.style.top = '50%';
-    this.resetCurrentImagePosition();
   }
 
   setLeftPosition() {
@@ -63,6 +54,11 @@ export class MapPage implements OnInit {
   goTo(target: number) {
     if (Number.isNaN(target)) return;
     this.currentPosition = target;
+  }
+
+  imageOnLoad() {
+    this.background.nativeElement.style.top = '50%';
+    this.layer.nativeElement.style.top = '50%';
     this.resetCurrentImagePosition();
   }
 }
